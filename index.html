@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Electronic Voting Machine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>Electronic Voting Machine</h1>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="vote.html" id="vote-link">Vote</a></li>
+                <li><a href="results.html" id="results-link">Results</a></li>
+                <li><a href="admin.html" id="admin-link" class="hidden">Admin</a></li>
+                <li><a href="register.html" id="register-link">Register</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="user-profile.html" id="profile-link">Profile</a></li>
+                <li><a href="user-history.html" id="history-link">History</a></li>
+                <li><a href="#" id="logout-link" class="hidden">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <h2 id="welcome-message">Welcome to the Advanced Electronic Voting Machine</h2>
+        <p>Cast your vote easily and securely.</p>
+        <div id="election-timer">
+            <span class="timer-label">Time until next election:</span>
+            <span class="timer-value" id="timer-value">00:00:00</span>
+        </div>
+        <section id="announcements">
+            <h3>Latest News</h3>
+            <div class="slider">
+                <div><img src="https://via.placeholder.com/400x200" alt="Announcement Image 1"></div>
+                <div><img src="https://via.placeholder.com/400x200" alt="Announcement Image 2"></div>
+                <div><img src="https://via.placeholder.com/400x200" alt="Announcement Image 3"></div>
+            </div>
+            <p>Stay tuned for the latest updates about the voting system.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electronic Voting Machine. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

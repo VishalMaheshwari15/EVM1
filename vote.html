@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting - Electronic Voting Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       
+        <h1>Electronic Voting Machine</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Home</a></li>
+                <li><a href="vote.html" id="vote-link">Vote</a></li>
+                <li><a href="results.html" id="results-link">Results</a></li>
+                <li><a href="history.html" id="history-link">Voting History</a></li>
+                <li><a href="admin.html" id="admin-link" class="hidden">Admin</a></li>
+                <li><a href="login.html" id="login-link">Login</a></li>
+                <li><a href="register.html" id="register-link">Register</a></li>
+                <li><a href="#" id="logout-link" class="hidden">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <h2>Cast Your Vote</h2>
+        <div id="voting-container">
+            <!-- Voting options will be injected here by JavaScript -->
+        </div>
+        <h2>Voter Feedback</h2>
+        <form id="feedbackForm">
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            <br>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Electronic Voting Machine. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Your existing code...
+
+    // Initialize the slider
+    if (document.querySelector('.slider')) {
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    }
+
+    // Other functions and logic...
+});
+
+    </script>
+</body>
+</html>
